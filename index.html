@@ -1,368 +1,248 @@
 <!DOCTYPE html>
-<!-- CORRECTION DU HTML :
-		- ajout accessibilité aux handicaps(visuels,moteurs,auditifs)
-
- -->
 <html lang="fr">
-<!-- ******    HEAD   ****** -->
+	<!-- HEAD -->
 	<head>
 		<meta charset="UTF-8">
-		<title>DAP - Accueil</title>
-		<!-- balise méta description du site pour référencement (enn 2 - 3 phrases) -->
-		<meta name="description" content="Comment est-ce que l'on peut faire de nouvelles découvertes, apprendre de nouvelles informations intéressantes et partager nos connaissances, nos idées et nos projets ? Ne cherchez plus, toutes vos questions ont réponse sur DAP, au sein de notre communauté de partage et d'entre-aide dans le respect.">
-
-		<link rel="stylesheet" type="text/css" href="css/main/main.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
+		<title>DAP - Acccueil</title>
+		<link rel="stylesheet" type="text/css" href="css/index/index.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- https://www.favicon-generator.org/ -->
-		<link rel="icon" type="image/x-icon" href="img/main/favicon.ico"/>
+		<link rel="icon" type="image/x-icon" href="img/index/favicon.ico"/>
+		<!-- loupe -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
 	</head>
-
-
-<!-- ******    BODY    ******* -->
+	
+	<!-- BODY -->
 	<body>
-		<!-- *******    HEADER    ****** -->
-		<header>
-			<nav class="header-nav">
-				<!-- Logo -->
-				<div class="header-nav-logo">
-					<a href="#" class="header-nav-logo-a" title="lien vers la page d'accueil">
-						<img src="img/main/logo1.png" class="header-nav-logo-a-img" alt="logo du site">
-					</a>
+		<!-- HEADER -->
+		<header id="header">
+			<!-- logo -->
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/index/logo.png"></a>
+				<h1>Découvrez, Apprenez, Partagez</h1>
+			</div>
+			<!-- account session -->
+			<div class="user">
+				<p>compte</p>
+				<img src="img/index/compte.png">
+			</div>
+			<!-- search bar -->
+			<div class="search">
+				<form role="search">
+					<input type="search" name="search-bar" title="search bar" placeholder="Rechercher..." aria-label="Rechercher parmi le contenu du site" size="20"  spellcheck="true" required="">
 
-					<h1 class="header-nav-logo-h1">Découvrez, Apprenez, Partagez</h1>
+					<button>
+						<i class="fa fa-search icon-home"></i></button>
+				</form>
+			</div>
+		</header>
+
+		<!-- NAV -->
+		<nav>
+			<!-- navigation bar -->
+			<ul class="menu">
+				<li class="menu-li-home">
+					<a href=""><i class="fa fa-home"></i><i class="fa fa-angle-down icon-angle-down"></i></a></li>
+				<li class="menu-li">
+					<a href="">Actualités</a></li>
+				<li class="menu-li">
+					<a href="">Compte</a></li>
+				<li class="menu-li">
+					<a href="">Boutique</a></li>
+				<li class="menu-li">
+					<a href="">Support</a></li>
+				<li class="menu-li">
+					<a href="">Contact</a></li>
+				<li class="menu-li">
+					<a href="">À propos de moi</a></li>
+			</ul>
+		</nav>
+
+		<!-- MAIN -->
+		<main>
+			<!-- Content -->
+			<div class="content">
+				<!-- Introduction to concept -->
+				<div class="introduce-concept">
+					<p>
+						Ce Blog a pour objectif de créer une communauté de partage de connaissances multiples dans des domaines variés et des idées de projets innovants. Si le concept vous plaît, devenez membre et participez vous aussi à ce mouvement en nous partageant vos connaissances.<br>Ensemble, découvrons et apprenons tous les jours de nouvelles choses.</p>
 				</div>
 
-				<!-- Barre de navigation -->
-				<ul class="header-nav-ul">
-					<li class="header-nav-ul-li header-nav-ul-li-menuText">
-						<h2 class="header-nav-ul-li-h2">menu</h2>
-					</li>
+				<!-- Video introducing -->
+				<div class="concept-video">
+					<img src="img/index/youtube.png">
+				</div>
+				<div class="tookpart">
+					<p>Inscrivez-vous ou connectez-vous en 3 clics à votre zone membre pour pouvoir intéragir avec les autres, partager vos connaissances, participer au salles de débats, réaliser vos achats dans la boutique et bien plus.<br>Sans profil membre, vous pouvez tout de même parcourir tout le contenu de ce blog.</p>
+				</div>
 
-					<!-- Menu déroulant -->
-					<li class="header-nav-ul-li"  id="header-nav-ul-li-menu">
-						<img src="img/main/menu_button.jpg" title="Menu" class="header-nav-ul-li-menu-img" alt="bouton du menu déroulant">
+				<!-- Sign in & Log in -->
+				<div class="sign-in">
+					<img src="img/index/inscription_account.png">
+					<h1>Inscription</h1>
+					<a href="">
+						<button>S'inscrire</button>
+					</a>
+				</div>
+				<div class="log-in">
+					<img src="img/index/connexion_account.png">
+					<h1>Connexion</h1>
+					<a href="">
+						<button>Se connecter</button>
+					</a>
+				</div>
 
-						<ul id="header-nav-ul-li-hideMenu">
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la page projets">Projets</a></li>
+				<!-- Share content -->
+				<div class="introduce-content">
+					<p>Retrouvez ci-dessous les liens vers les différents thèmes du blog. Un simple clic sur la section souhaitée et vous aurez accès à tout son contenu.</p>
+				</div>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la page cuisine">Cuisine</a></li>
+				<!-- Sections -->
+				<div class="shared-content">
+					<section class="sections">
+						<h1>Projets</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la page découvertes">Découvertes</a></li>
+					<section class="sections">
+						<h1>Cuisine</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers les jeux">Jeux</a></li>
+					<section class="sections">
+						<h1>Découvertes</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers le salon de débat">Débats</a></li>
+					<section class="sections">
+						<h1>Jeux</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la page de prestations Web">Prestations Web</a></li>
+					<section class="sections">
+						<h1>Débats</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la page de partage d'idées et de projets">GiveID</a></li>
+					<section class="sections">
+						<h1>Prestations Web</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la page trucs et astuces">Trucs & Astuces</a></li>
+					<section class="sections">
+						<h1>GiveID</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la boutique en ligne">Boutique</a></li>
+					<section class="sections">
+						<h1>Trucs & Astuces</h1>
+					</section>
 
-							<li>
-								<a href="" class="header-nav-ul-li-hideMenu-a" title="lien vers la FAQ (Foire Aux Questions)">F.A.Q</a></li>
-						</ul>
-					</li>
+					<section class="sections">
+						<h1>Compte</h1>
+					</section>
 
-					<li class="header-nav-ul-li">
-						<a href="" class="header-nav-ul-li-a" title="lien vers la page d'accueil">Accueil</a></li>
+					<section class="sections">
+						<h1>Contact</h1>
+					</section>
 
-					<li class="header-nav-ul-li">
-						<a href="" class="header-nav-ul-li-a" title="lien vers la boutique en ligne">Boutique</a></li>
+					<section class="sections">
+						<h1>À propos de moi</h1>
+					</section>
+				</div>
 
-					<li class="header-nav-ul-li">
-						<a href="" class="header-nav-ul-li-a" title="lien vers la FAQ (Foire Aux Questions)">FAQ</a></li>
+				<div class="boutique-support">
+					<p>À l'issue de certains projets présentés dans la rubrique "Projets", retrouvez quelques réalisations mises en vente dans la boutique pour ceux qui seraient intéressés.<br> Pour toutes questions, n'hésitez pas à consulter la section support car des réponses ont déjà été élaborées. <br>Si votre problème persiste, rendez-vous dans la rubrique Contact pour m'envoyer un message. Je ferai de mon mieux pour vous répondre au plus vite. Sans réponse immédiate de ma part, considérez que je suis dans l'impossibilité et comptez une dizaine de jours avant réponse.</p>
+				</div>
 
-					<li class="header-nav-ul-li header-nav-ul-li-contact">
-						<a href="" class="header-nav-ul-li-a" title="lien vers la page contact">Contact</a></li>
-				</ul>
+				<div class="boutique">
+					<h1>Boutique</h1>
+				</div>
+				<div class="support">
+					<h1>Support</h1>
+				</div>
+			</div>
 
-				<!-- Barre de recherche -->
-				<div class="header-searchBarre-div">
-					<!-- Compte utilisateur -->
-					<div class="header-searchBarre-div-account">
-						<a href="" title="lien vers la page compte utilisateur">
-							<img src="img/main/account.png" alt="image du compte utilisateur"></a>
+			<!-- ASIDE -->
+			<aside class="news">
+				<!-- horloge -->
+				<div class="clock-container">
+					<div class="clock">
+						<div class="hour">
+							<div class="hr" id="hr"></div>
+						</div>
+
+						<div class="min">
+							<div class="mn" id="mn"></div>
+						</div>
+
+						<div class="sec">
+							<div class="sc" id="sc"></div>
+						</div>
+					</div>
+				</div>
+
+				<h1>Actus n°...</h1>
+				<img src="img/index/maj.jpg">
+				<p>Cours résumé de présentation du contenu de la nouveauté du jour</p>
+
+				<h1>Actus n°...</h1>
+				<img src="img/index/maj.jpg">
+				<p>Cours résumé de présentation du contenu de la nouveauté du jour</p>
+			</aside>
+
+			<!-- FOOTER -->
+			<footer>
+				<div class="items">
+					<div class="rubriques">
+						<h1>Rubriques</h1>
+						<a href="">Projets</a>
+						<a href="">Cuisine</a>
+						<a href="">Découvertes</a>
+						<a href="">Jeux</a>
+						<a href="">Débats</a>
+						<a href="">Prestations Web</a>
+						<a href="">GiveID</a>
+						<a href="">Trucs & Astuces</a>
 					</div>
 
-					<!-- Champ de recherche -->
-					<form role="search" class="header-searchBarre-div-form">
-						<input type="search" class="header-searchBarre-div-form-input" name="searchBarre" title="search barre" placeholder="Rechercher" aria-label="Rechercher parmi le contenu du site" size="20" spellcheck="true" required="">
+					<div class="nouveautés">
+						<h1>Nouveautés</h1>
+						<a href="">Actualités</a>
+						<a href="">Boutique</a>
+						<a href="">Compte</a>
+					</div>
 
-						<button class="header-searchBarre-div-form-button">
-							<i class="fa fa-search icon-loupe"></i></button>
-					</form>
+					<div class="contact">
+						<h1>À propos</h1>
+						<a href="">À propos de moi</a>
+						<a href="">Support</a>
+						<a href="">Contact</a>
+					</div>
 				</div>
-			</nav>
-		</header>
-		
-		<!-- ******   ASIDE   ****** -->
-		<aside>
-			<h1 class="aside-h1">Actualités</h1>
-			<section class="aside-section1">
-				<a href="" title="lien vers ...">
-					<h1>Actu 1</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
 
-			<section>
-				<a href="" title="lien vers ...">
-					<h1>Actu 2</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
+				<div class="social-networks">
+					<ul>
+						<li>
+							<a href="" title="lien pour me suivre sur facebook">
+								<img src="img/index/facebook.png" alt="logo de facebook"></a></li>
 
-			<section>
-				<a href="" title="lien vers ...">
-					<h1>Actu 3</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
+						<li>
+							<a href="" title="lien pour me suivre sur instagram">
+								<img src="img/index/instagram.png" alt="logo de instagram"></a></li>
 
-			<section>
-				<a href="" title="lien vers ...">
-					<h1>Actu 4</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
+						<li>
+							<a href="" title="lien pour me suivre sur snapchat">
+								<img src="img/index/snapchat.png" alt="logo de snapchat"></a></li>
 
-			<section>
-				<a href="" title="lien vers ...">
-					<h1>Actu 5</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
+						<li>
+							<a href="" title="lien pour me suivre sur youtube">
+								<img src="img/index/youtube.png" alt="logo de youtube"></a></li>
+					</ul>
+				</div>
 
-			<section>
-				<a href="" title="lien vers ...">
-					<h1>Actu 6</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
-
-			<section class="aside-section7">
-				<a href="" title="lien vers ...">
-					<h1>Actu 7</h1>
-					<img src="img/main/fond_account.jpg" alt="image de ...">
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indusLorem Ipsum
-					</p>
-				</a>
-			</section>
-		</aside>
-
-		<!-- *******    MAIN    ****** -->
-		<main>
-			<!-- Explication du Concept -->
-			<div class="main-concept">
-				<section class="main-concept-section">
-					<p>
-						Bienvenue, ce Blog a été crée dans le but de partager avec vous différents projets que je réalise, mais aussi d'autres activités ou expériences que je pratique et découvre. Cela pourrait vous donner des idées ou bien vous divertir. Bonne visite et n'hésitez pas à me contacter pour toutes questions.</p>
-				</section>
-
-				<section class="main-concept-introduction">
-					<video src="" type="video/mp4" width="" class="main-concept-introduction-video"></video>
-				</section>
-			</div>
-
-			<!-- Sections du site -->
-			<div class="main-sections">
-				<section>
-					<h1>Projets</h1>
-					<p>
-						Retrouvez tous les projets que j'ai réalisés jusqu'ici, ceux qui sont en cours et ceux à venir.</p>
-					<a href="" title="lien pour aller sur la page projets">Découvrir</a>
-				</section>
-
-				<section>
-					<h1>Cuisine</h1>
-					<p>
-						Une petite faim mais pas d'idée de repas. Je vous partage mes créations culinaires, à vous de choisir celle qui vous fait le plus envie.</p>
-					<a href="" title="lien pour aller sur la page cuisine">Découvrir</a>
-				</section>
-
-				<section>
-					<h1>Découvertes</h1>
-					<p>
-						On en apprend tous les jours. Découvrez des anecdotes intéressantes sur le monde qui nous entoure.</p>
-					<a href="" title="lien pour aller sur la page découvertes">Découvrir</a>
-				</section>
-
-				<section>
-					<h1>Jeux</h1>
-					<p>
-						Envie de vous divertir sans vous prendre la tête ? Un ensemble de petits jeux que je me suis amusé à créer pourra sûrement faire l'affaire.</p>
-					<a href="" title="lien pour aller sur la page jeux">Découvrir</a>
-				</section>
-
-				<section>
-					<h1>Débats</h1>
-					<p>
-						Pour ceux qui sont intéressés par des débats, entrez dans les salles dédiées et débattez en toute politesse et courtoisie sur vos sujets favoris.</p>
-					<a href="" title="lien pour aller sur la page débats">Découvrir</a>
-				</section>
-
-				<section class="main-section-6 topSpace">
-					<h1>Prestations Web</h1>
-					<p>
-						Besoin d'un site web pour vos projets ? Contactez-moi et je me ferai un plaisir de vous en réaliser un sur mesure.</p>
-					<a href="" title="lien pour aller sur la page prestations Web">Découvrir</a>
-				</section>
-
-				<section class="topSpace">
-					<h1>GiveID</h1>
-					<p>
-						Donnez, partagez ou collaborez avec les autres membres sur une idée de projet. Réagissez à d'autres idées et innovez ensemble.</p>
-					<a href="" title="lien pour aller sur la page GiveID">Découvrir</a>
-				</section>
-
-				<section class="topSpace">
-					<h1>Trucs & Astuces</h1>
-					<p>
-						Voici quelques astuces de mon couteau suisse qui pourront peut-être vous être utile aussi.</p>
-					<a href="" title="lien pour aller sur la page trucs et astuces">Découvrir</a>
-				</section>
-
-				<section class="main-section-9 topSpace">
-					<h1>Boutique</h1>
-					<p>
-						Envie d'acheter des produits issus de certains projets présentés ? Rendez-vous dans la boutique et faîtes-vous plaisir.</p>
-					<a href="" title="lien pour aller sur la page boutique">Découvrir</a>
-				</section>
-			</div>
-
-			<!-- Accès au compte utilisateur -->
-			<div class="main-account">
-				<ul>
-					<li>
-						<a href="" class="main-account-ul-li-connexion" title="lien pour se connecter">Connexion</a></li>
-
-					<li>
-						<a href="" class="main-account-ul-li-inscription" title="lien pour s'inscrire">Inscription</a></li>
-				</ul>
-			</div>
-
-			<!-- Foire aux questions -->
-			<div class="main-faq">
-				<ul class="main-faq-ul">
-					<li class="main-faq-ul-li-cover">
-						<h1>F.A.Q</h1>
-					</li>
-
-					<li class="main-faq-ul-li-content">
-						<p>
-							Si vous avez des questions à propos de l'utilisation générale de ce site, d'un malfonctionnement ou pour tout autre problème. Veuillez tout d'abord vous rendre dans la section F.A.Q (Foire Aux Questions) à l'aide du bouton chevron ci-dessous, afin de trouver une solution. Contactez-moi depuis l'onglet contact dans la barre de naviguation, si votre problème persiste. Je ferai de mon mieux pour vous répondre au plus vite. Sans réponse immédiate de ma part, considérez que je suis dans l'impossibilité et comptez une dizaine de jours avant réponse.
-						</p>
-
-						<a href="" title="lien pour aller sur la page FAQ (Foire Aux Questions)">
-							<img src="img/main/goFaq.jpg" alt="bouton chevron d'accès à la FAQ">
-						</a>
-					</li>
-				</ul>
-			</div>
+				<div class="privacy">
+					<a href="">Politique d'utilisation</a>
+					<a href="">Politique de confidentialité</a>
+				</div>
+			</footer>
 		</main>
 
-
-		<!-- ******   FOOTER   ****** -->
-		<footer>
-			<span class="footer-text">
-				Retrouvez-moi sur les réseaux pour rester au courant des derniers contenus mis à jours sur ce site.
-			</span>
-
-			<!-- Réseaux -->
-			<ul class="footer-network">
-				<li>
-					<a href="" title="lien pour me suivre sur facebook">
-						<img src="img/main/facebook.png" alt="logo de facebook"></a></li>
-
-				<li>
-					<a href="" title="lien pour me suivre sur instagram">
-						<img src="img/main/instagram.png" alt="logo de instagram"></a></li>
-
-				<li>
-					<a href="" title="lien pour me suivre sur snapchat">
-						<img src="img/main/snapchat.png" alt="logo de snapchat"></a></li>
-
-				<li>
-					<a href="" title="lien pour me suivre sur youtube">
-						<img src="img/main/youtube.png" alt="logo de youtube"></a></li>
-			</ul>
-
-			<!-- Nom des réseaux -->
-			<ul class="footer-network-name">
-				<li>
-					<span>Facebook</span></li>
-
-				<li>
-					<span>Instagram</span></li>
-
-				<li>
-					<span>Snapchat</span></li>
-
-				<li>
-					<span>Youtube</span></li>
-			</ul>
-
-			<!-- Date & Heure -->
-			<div class="footer-fuseauHoraire">
-				<div class="footer-fuseauHoraire-dateHeure">
-					<h2>
-						<a href="https://www.zeitverschiebung.net/fr/city/2988507" title="lien vers un site d'affichage des fuseaux horaires">
-						</a></h2>
-
-					<iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=fr&size=small&timezone=Europe%2FParis" width="100%" height="90" frameborder="0" seamless></iframe>
-				</div>
-			</div>
-
-			<!-- Politiques du site -->
-			<ul class="footer-privacy">
-				<li class="footer-privacy-li privacy-utilisation">
-					<a href="" title="lien vers les termes d'utilisation">Politique d'utilisation</a></li>
-
-				<li class="footer-privacy-li privacy-confidentialité">
-					<a href="" title="lien vers la page confidentialité">Politique de confidentialité</a></li>
-
-				<li class="footer-privacy-li-compteur">
-					<p>Nombre de visiteurs</p>
-
-					<a href="http://www.mon-compteur.fr" title="lien vers un site de création de compteur">
-						<!-- http://www.mon-compteur.fr/installation.html -->
-						<img src="http://www.mon-compteur.fr/html_c02genv2-70539-3" border="0" alt="image de compteur de visiteurs" /></a></li>
-			</ul>
-		</footer>
-
-
-<!-- ******   SCRIPT   ****** -->
-		<script type="text/javascript" src="js/main/menu.js"></script>
+		<script type="text/javascript" src="js/index/nav-bar-top.js"></script>
+		<script type="text/javascript" src="js/index/clock.js"></script>
 	</body>
 </html>
