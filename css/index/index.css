@@ -207,6 +207,9 @@ header{
 /******* NAV *******/
 nav{
 	width: 100%;
+	height: 7vh;
+	display: flex;
+	flex-direction: row;
 	clear: both;
 	background-color: #ff5500;
 }
@@ -218,13 +221,15 @@ nav{
 	background-color: #ff5500;
 }
 .menu-li-home{
+	margin: auto;
 	list-style-type: none;
 }
 .menu-li{
+	margin: auto;
 	list-style-type: none;
 }
 .menu-li-home a{
-	padding: 2vh 2vw;
+	padding: 2.3vh 2vw;
 	display: block;
 	text-decoration: none;
 	font-family: sans-serif;
@@ -233,7 +238,7 @@ nav{
 	transition-duration: 0.3s;
 }
 .menu-li a{
-	padding: 2vh 2vw;
+	padding: 2.3vh 2vw;
 	display: block;
 	text-decoration: none;
 	font-family: sans-serif;
@@ -365,7 +370,7 @@ main{
 .sign-in h1, .log-in h1{
 	margin: auto;
 	padding: 5vh 0vw 8vh 0vw;
-	font-family: cursive;
+	font-family: sans-serif;
 	color: #fff;
 }
 .sign-in a, .log-in a{
@@ -374,7 +379,7 @@ main{
 	background-color: red;
 }
 .sign-in button{
-	padding: 1vh 4vw;
+	padding: 1vh 3vw;
 	font-size: 1.5vw;
 	border-radius: 15px;
 	background-color: #ff5500;
@@ -382,10 +387,10 @@ main{
 	transition-duration: 0.3s;
 }
 .log-in button{
-	padding: 1vh 2vw;
+	padding: 1vh 1vw;
 	font-size: 1.5vw;
 	border-radius: 15px;
-	background-color: #00ff00;
+	background-color: #00b300;
 	color: #fff;
 	transition-duration: 0.3s;
 }
@@ -510,6 +515,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	float: right;
+	border-radius: 0 0 0 15px;
 	background-color: #091921;
 	overflow: hidden;
 }
@@ -519,16 +525,16 @@ main{
 /* horloge */
 .clock-container{
 	width: 20%;
-	height: 32%;
-	top: 23.5vh;
+	height: 32vh;
 	display: flex;
 	flex-direction: column;
 	background-color: #091921;
 	position: absolute;
+	top: 24vh;
 }
 .clock{
-	width: 70%;
-	height: 80%;
+	width: 200px;
+	height: 200px;
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -606,6 +612,7 @@ main{
 	padding: 2vh 0vw;
 	font-family: sans-serif;
 	font-size: 1.5vw;
+	color: #fff;
 }
 .news img{
 	width: 100%;
@@ -616,6 +623,7 @@ main{
 	padding: 2vh 0vw;
 	text-align: justify;
 	font-family: sans-serif;
+	color: #fff;
 }
 
 
