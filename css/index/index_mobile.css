@@ -78,7 +78,7 @@
 	.menu-li-home a{
 		width: 100%;
 		margin-left: 0;
-		padding: 2vh;
+		padding: 2vh 0vw;
 		display: flex;
 		flex-direction: row;
 		border-radius: 0;
