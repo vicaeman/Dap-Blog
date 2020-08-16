@@ -54,6 +54,7 @@ header{
 }
 .user img{
 	width: 3vw;
+	height: 80%;
 	margin: auto;
 	border-radius: 50%;
 }
@@ -90,120 +91,6 @@ header{
 }
 
 
-/* MOBILE [ < 680 px] */
-@media (max-width: 679px){
-	header{
-		height: auto;
-	}
-	.logo, .search{
-		width: 100%;
-	}
-	/* logo */
-	.logo a{
-		width: 100%;
-		height: 100%;
-		margin: 0;
-	}
-	.logo a img{
-		width: 100%;
-		height: 100%;
-		display: block;
-		border-radius: initial;
-	}
-	.logo h1{
-		width: 100%;
-		margin: 0;
-		padding: 2vh 0vw;
-		text-align: center;
-		font-size: 4vw;
-	}
-	/* account session */
-	.user{
-		width: 100%;
-		height: 10vh;
-	}
-	.user p{
-		margin-left: 32vw;
-	}
-	.user img{
-		width: 9vw;
-		margin-right: 32vw;
-		border-radius: 50%;
-	}
-	/* search bar */
-	.search form{
-		margin: auto;
-		padding: 2vh 0vw;
-	}
-	.search form input{
-		width: 50vw;
-		height: 7vh;
-		padding-left: 10vw;
-		font-size: 4vw;
-	}
-	.search form button{
-		width: 12vw;
-		height: 7vh;
-	}
-	.icon-angle-down{
-		margin-left: 45%;
-		visibility: visible;
-	}
-}
-
-
-/* TABLETTE [ 680 px ; 1200 px] */
-@media (min-width: 680px) and (max-width: 1200px){
-	header{
-		height: 15vh;
-	}
-	/* logo */
-	.logo{
-		width: 60%;
-		height: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-	}
-	.logo a{
-		width: 15vw;
-		height: 9vh;
-		margin: 3vh 0vw 1vh 1vw;
-	}
-	.logo a img{
-		width: 100%;
-		height: 100%;
-		border-radius: 10px;
-	}
-	.logo h1{
-		margin: 0;
-		padding: 6vh 2vw;
-		font-size: 2vw;
-	}
-	/* account session */
-	.user, .search{
-		width: 40%;
-		height: 50%;
-	}
-	.user p{
-		margin-left: 19vw;
-	}
-	.user img{
-		width: 5vw;
-	}
-	/* search bar */
-	.search form input{
-		width: 20vw;
-		height: 5vh;
-		padding-left: 3vw;
-		font-size: 2vw;
-	}
-	.search form button{
-		width: 8vw;
-	}
-}
-
-
 /******* NAV *******/
 nav{
 	width: 100%;
@@ -223,57 +110,44 @@ nav{
 .menu-li-home{
 	margin: auto;
 	list-style-type: none;
+	cursor: pointer;
 }
-.menu-li{
+.menu ul li{
 	margin: auto;
 	list-style-type: none;
 }
 .menu-li-home a{
-	padding: 2.3vh 2vw;
+	margin-left: 0.5vw;
+	padding: 1.5vh 2vw;
 	display: block;
+	border-radius: 5px;
 	text-decoration: none;
 	font-family: sans-serif;
 	color: #fff;
 	background-color: red;
 	transition-duration: 0.3s;
 }
-.menu-li a{
-	padding: 2.3vh 2vw;
+.menu ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+.menu ul li a{
+	padding: 1.5vh 2vw;
 	display: block;
 	text-decoration: none;
 	font-family: sans-serif;
 	color: #fff;
 	transition-duration: 0.3s;
 }
-.menu-li a:hover{
+.menu ul li a:hover{
 	background-color: #000;
 	transition-duration: 0.3s;
 }
 .menu-li-home a:hover{
 	transform: scale(1.1);
 	transition-duration: 0.3s;
-}
-
-
-/* MOBILE [ < 680 px] */
-@media (max-width: 680px){
-	/* navigation bar */
-	.menu{
-		display: flex;
-		flex-direction: column;
-	}
-	.menu-li-home a{
-		padding: 2vh 2vw;
-	}
-	.menu-li a{
-		text-align: center;
-	}
-	.menu-li-home a:hover{
-		transform: initial;
-	}
-	.menu-li a:hover{
-		background-color: initial;
-	}
 }
 
 
@@ -360,7 +234,7 @@ main{
 }
 .sign-in:hover, .log-in:hover{
 	background-size: 130%;
-	transition-duration: 0.3s
+	transition-duration: 0.3s;
 }
 .sign-in img, .log-in img{
 	width: 15%;
@@ -376,7 +250,6 @@ main{
 .sign-in a, .log-in a{
 	margin: auto;
 	border-radius: 15px;
-	background-color: red;
 }
 .sign-in button{
 	padding: 1vh 3vw;
@@ -399,26 +272,6 @@ main{
 	background-color: #800080;
 	transition-duration: 0.3s;
 }
-
-
-/* MOBILE [ < 680 px] */
-@media (max-width: 680px){
-	.content{
-		width: 100%;
-	}
-	.introduce-concept{
-		height: 20vh;
-	}
-	.concept-video{
-		height: 40vh;
-	}
-	.sign-in, .log-in{
-		width: 50%;
-		height: 20vh;
-	}
-}
-
-
 /* Share content */
 .introduce-content{
 	display: flex;
@@ -462,17 +315,6 @@ main{
 	font-family: sans-serif;
 	color: #fff;
 }
-
-
-/* MOBILE [ < 680 px] */
-@media (max-width: 680px){
-	.sections, .sections2{
-		width: 50%;
-		height: 35vh;
-	}
-}
-
-
 .boutique-support{
 	display: flex;
 	flex-direction: column;
@@ -510,12 +352,11 @@ main{
 }
 .news{
 	width: 20%;
-	height: 40vh;
+	height: 44vh;
 	padding-top: 32vh;
 	display: flex;
 	flex-direction: column;
 	float: right;
-	border-radius: 0 0 0 15px;
 	background-color: #091921;
 	overflow: hidden;
 }
@@ -627,15 +468,9 @@ main{
 }
 
 
-/* MOBILE [ < 680 px] */
-@media (max-width: 680px){
-	.boutique, .support, .news{
-		width: 100%;
-		height: 30vh;
-	}
-}
 /******* FOOTER *******/
 footer{
+	width: 80%;
 	margin: 0;
 	padding: 0;
 	clear: both;

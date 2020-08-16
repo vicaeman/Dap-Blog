@@ -5,6 +5,8 @@
 		<meta charset="UTF-8">
 		<title>DAP - Acccueil</title>
 		<link rel="stylesheet" type="text/css" href="css/index/index.css">
+		<link rel="stylesheet" type="text/css" href="css/index/index_mobile.css">
+		<link rel="stylesheet" type="text/css" href="css/index/index_tablet.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- https://www.favicon-generator.org/ -->
 		<link rel="icon" type="image/x-icon" href="img/index/favicon.ico"/>
@@ -42,20 +44,20 @@
 		<nav>
 			<!-- navigation bar -->
 			<ul class="menu">
-				<li class="menu-li-home">
-					<a href=""><i class="fa fa-home"></i><i class="fa fa-angle-down icon-angle-down"></i></a></li>
-				<li class="menu-li">
-					<a href="">Actualités</a></li>
-				<li class="menu-li">
-					<a href="">Compte</a></li>
-				<li class="menu-li">
-					<a href="">Boutique</a></li>
-				<li class="menu-li">
-					<a href="">Support</a></li>
-				<li class="menu-li">
-					<a href="">Contact</a></li>
-				<li class="menu-li">
-					<a href="">À propos de moi</a></li>
+				<li class="menu-li-home" id="menuButton">
+					<a>
+						<i class="fa fa-home"></i>
+						<i class="fa fa-angle-down icon-angle-down"></i>
+					</a>
+				</li>
+				<ul id="menu">
+					<li><a href="">Actualités</a></li>
+					<li><a href="">Compte</a></li>
+					<li><a href="">Boutique</a></li>
+					<li><a href="">Support</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">À propos de moi</a></li>
+				</ul>
 			</ul>
 		</nav>
 
@@ -146,7 +148,7 @@
 				</div>
 
 				<div class="boutique-support">
-					<p>À l'issue de certains projets présentés dans la rubrique "Projets", retrouvez quelques réalisations mises en vente dans la boutique pour ceux qui seraient intéressés.<br> Pour toutes questions, n'hésitez pas à consulter la section support car des réponses ont déjà été élaborées. <br>Si votre problème persiste, rendez-vous dans la rubrique Contact pour m'envoyer un message. Je ferai de mon mieux pour vous répondre au plus vite. Sans réponse immédiate de ma part, considérez que je suis dans l'impossibilité et comptez une dizaine de jours avant réponse.</p>
+					<p>À l'issue de certains projets présentés dans la rubrique "Projets", retrouvez quelques réalisations mises en vente dans la boutique pour ceux qui seraient intéressés.<br> Pour toutes questions, n'hésitez pas à consulter la section support car des réponses ont déjà été élaborées. <br>Si votre problème persiste, rendez-vous dans la rubrique Contact pour m'envoyer un message.</p>
 				</div>
 
 				<div class="boutique">
@@ -245,5 +247,6 @@
 		<script type="text/javascript" src="js/index/nav-bar-top.js"></script>
 		<script type="text/javascript" src="js/index/clock.js"></script>
 		<script type="text/javascript" src="js/index/clock-news-top.js"></script>
+		<script type="text/javascript" src="js/index/menu-display-block.js"></script>
 	</body>
 </html>
