@@ -1,6 +1,6 @@
-/* MOBILE [ < 800 px] */
+/* MOBILE [ < 679 px] */
 /******* HEADER *******/
-@media (max-width: 799px){
+@media (max-width: 679px){
 	header{
 		height: auto;
 	}
@@ -62,7 +62,7 @@
 
 
 /******* NAV *******/
-@media (max-width: 799px){
+@media (max-width: 679px){
 	nav{
 		height: auto;
 	}
@@ -101,7 +101,7 @@
 
 
 /******* MAIN *******/
-@media (max-width: 799px){
+@media (max-width: 679px){
 	/* Content */
 	.content{
 		width: 100%;
@@ -174,7 +174,7 @@
 }
 
 
-@media (max-width: 799px){
+@media (max-width: 679px){
 	/* Share content */
 	.introduce-content p{
 		padding: 7vh 0vw;
@@ -209,7 +209,7 @@
 
 
 /******* FOOTER *******/
-@media (max-width: 799px){
+@media (max-width: 679px){
 	footer{
 		width: 100%;
 	}

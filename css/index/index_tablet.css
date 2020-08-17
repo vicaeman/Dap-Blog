@@ -1,6 +1,6 @@
-/* TABLET [ 800 px ; 1200 px] */
+/* TABLET [ 680 px ; 1200 px] */
 /******* HEADER *******/
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 680px) and (max-width: 1200px){
 	header{
 		height: 15vh;
 	}
@@ -47,7 +47,7 @@
 }
 
 
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 680px) and (max-width: 1200px){
 	/* Introduction to concept */
 	.introduce-concept p{
 		font-size: 2vw;
@@ -98,7 +98,7 @@
 
 
 /******* MAIN *******/
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 680px) and (max-width: 1200px){
 	/* Share content */
 	.introduce-content p{
 		font-size: 2vw;
@@ -121,7 +121,7 @@
 }
 
 
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 680px) and (max-width: 1200px){
 	/* horloge */
 	.clock-container{
 		height: 25vh;
@@ -163,7 +163,7 @@
 
 
 /******* FOOTER *******/
-@media (min-width: 800px) and (max-width: 1200px){
+@media (min-width: 680px) and (max-width: 1200px){
 	.rubriques a, .nouveautés a, .contact a{
 		font-size: 2vw;
 	}
