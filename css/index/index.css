@@ -455,7 +455,8 @@ main{
 	color: #fff;
 }
 .news img{
-	width: 100%;
+	width: 90%;
+	margin: auto;
 }
 .news p{
 	width: 80%;

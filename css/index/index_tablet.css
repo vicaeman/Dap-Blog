@@ -1,4 +1,5 @@
 /* TABLET [ 680 px ; 1200 px] */
+/******* HEADER *******/
 @media (min-width: 680px) and (max-width: 1200px){
 	header{
 		height: 15vh;
@@ -16,11 +17,6 @@
 		height: 9vh;
 		margin: 3vh 0vw 1vh 1vw;
 	}
-	.logo a img{
-		width: 100%;
-		height: 100%;
-		border-radius: 10px;
-	}
 	.logo h1{
 		margin: 0;
 		padding: 6vh 2vw;
@@ -36,7 +32,6 @@
 	}
 	.user img{
 		width: 5vw;
-		height: 80%;
 		margin-right: 5vw;
 	}
 	/* search bar */
@@ -53,7 +48,136 @@
 
 
 @media (min-width: 680px) and (max-width: 1200px){
-
+	/* Introduction to concept */
+	.introduce-concept p{
+		font-size: 2vw;
+	}
+	/* Video introducing */
+	.concept-video{
+		height: 60vh;
+	}
+	.concept-video img{
+		width: 8vw;
+	}
+	.tookpart p{
+		font-size: 2vw;
+	}
+	/* Sign in & Log in */
+	.sign-in{
+		background-size: cover;
+	}
+	.log-in{
+		background-size: cover;
+	}
+	.sign-in:hover, .log-in:hover{
+		background-size: cover;
+	}
+	.sign-in img, .log-in img{
+		width: 17%;
+	}
+	.sign-in h1, .log-in h1{
+		margin: auto;
+		padding: 6vh 0vw;
+		font-family: sans-serif;
+		color: #fff;
+	}
+	.sign-in a, .log-in a{
+		border-radius: 10px;
+	}
+	.sign-in button{
+		padding: 2vh 4vw;
+		font-size: 2vw;
+		border-radius: 10px;
+	}
+	.log-in button{
+		padding: 2vh 2vw;
+		font-size: 2vw;
+		border-radius: 10px;
+	}
 }
 
 
+/******* MAIN *******/
+@media (min-width: 680px) and (max-width: 1200px){
+	/* Share content */
+	.introduce-content p{
+		font-size: 2vw;
+	}
+	/* Sections */
+	.sections{
+		width: 33.2%;
+		height: 45vh;
+	}
+	.boutique-support p{
+		font-size: 2vw;
+		line-height: 5vh;
+	}
+	.boutique{
+		height: 30vh;
+	}
+	.support{
+		height: 30vh;
+	}
+}
+
+
+@media (min-width: 680px) and (max-width: 1200px){
+	/* horloge */
+	.clock-container{
+		height: 25vh;
+		top: 22vh;
+	}
+	.clock{
+		width: 130px;
+		height: 130px;
+	}
+	.hour, .hr{
+		height: 60px;
+	}
+	.min, .mn{
+		height: 80px;
+	}
+	.sec, .sc{
+		height: 90px;
+	}
+	.hr:before{
+		width: 5px;
+		height: 30px;
+	}
+	.mn:before{
+		width: 3px;
+		height: 40px;
+	}
+	.sc:before{
+		width: 2px;
+		height: 60px;
+	}
+	.news h1{
+		font-size: 2vw;
+	}
+	.news img{
+		width: 90%;
+		margin: auto;
+	}
+}
+
+
+/******* FOOTER *******/
+@media (min-width: 680px) and (max-width: 1200px){
+	.rubriques a, .nouveautés a, .contact a{
+		font-size: 2vw;
+	}
+	.rubriques a:hover, .nouveautés a:hover, .contact a:hover{
+		text-decoration: initial;
+	}
+	.social-networks ul li{
+		width: 5vw;
+		padding: 0vh 1vw;
+	}
+	.social-networks ul li a img:hover{
+		transform: initial;
+	}
+	.privacy a{
+		font-size: 2vw;
+	}
+}

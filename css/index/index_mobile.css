@@ -1,4 +1,5 @@
 /* MOBILE [ < 680 px] */
+/******* HEADER *******/
 @media (max-width: 679px){
 	header{
 		height: auto;
@@ -60,6 +61,7 @@
 }
 
 
+/******* NAV *******/
 @media (max-width: 680px){
 	nav{
 		height: auto;
@@ -98,6 +100,7 @@
 }
 
 
+/******* MAIN *******/
 @media (max-width: 680px){
 	/* Content */
 	.content{
@@ -132,13 +135,15 @@
 	/* Sign in & Log in */
 	.sign-in{
 		width: 100%;
-		padding: 10vh 0vw;
+		height: auto;
+		padding: 5vh 0vw;
 		background-size: cover;
 	}
 	.log-in{
 		width: 100%;
+		height: auto;
 		margin-top: 4vh;
-		padding: 10vh 0vw;
+		padding: 5vh 0vw;
 		background-size: cover;
 	}
 	.sign-in:hover, .log-in:hover{
@@ -203,6 +208,7 @@
 }
 
 
+/******* FOOTER *******/
 @media (max-width: 680px){
 	footer{
 		width: 100%;
