@@ -213,7 +213,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	float: left;
-	background-image: url("../../img/index/fond_inscription.jpg");
+	background-image: url('../../img/index/fond_inscription.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
@@ -225,7 +225,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	float: right;
-	background-image: url("../../img/index/fond_connexion.png");
+	background-image: url('../../img/index/fond_connexion.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100%;
@@ -380,7 +380,7 @@ main{
 	justify-content: center;
 	align-items: center;
 	background-color: #091921;
-	background-image: url(../../img/index/clock.png);
+	background-image: url('../../img/index/clock.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;

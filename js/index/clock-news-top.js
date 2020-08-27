@@ -16,6 +16,8 @@ function scrollTopNews() {
     clock.style.width = "20%";
   } else {
     news.style.position = "";
+    news.style.top = "";
+    news.style.right = "";
     news.style.height = "";
     news.style.paddingTop = "";
     clock.style.position = "";
